@@ -1,0 +1,15 @@
+@import './libs/reset';
+@import './libs/variable';
+@import './components/base/nav';
+@import './components/base/slide';
+@import './components/base/button';
+@import './components/base/grid';
+@import './views/tablet';
+.top-bar {
+    height: 40px;
+    background-color: black;
+    color: $color-primary;
+    font-size: 1.4rem;
+    line-height: 40px;
+    text-align: center;
+}
