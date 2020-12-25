@@ -14,6 +14,7 @@
 <body>
     <!-- <div id="root">kmacoders</div> -->
     <div class="container">
+        <!-- Header  -->
         <header class="header">
             <div class="top-bar">FREE SHIPPING ON ORDERS OVER $70</div>
 
@@ -386,11 +387,13 @@
         </header>
     </div>
 
+    <!-- Content  -->
     <div class="content">
+
         <div class="section-feature-collection">
-            <div class="section__text">
-                <div class="section__title">OUR BEST SELLERS</div>
-                <div class="section__gender">
+            <div class="section-feature-collection__text">
+                <div class="section-feature-collection__header">OUR BEST SELLERS</div>
+                <div class="section-feature-collection__gender">
                     <a href="#">MEN</a>
                     <a href="#">WOMEN</a>
                 </div>
@@ -622,8 +625,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-move swiper-button-next"></div>
+                    <div class="swiper-button-move swiper-button-prev"></div>
                 </div>
             </div>
 
@@ -634,11 +637,11 @@
         </div>
 
         <div class="section-collection-list">
-            <div class="section__img"></div>
-            <div class="section-box">
-                <div class="section__text">
-                    <div class="section-box__desc">WORKING WITH</div>
-                    <div class="section-box__title">LE GRAND SAC</div>
+            <div class="section-collection-list__anh"></div>
+            <div class="section-collection-list-box">
+                <div class="section-collection-list__text">
+                    <div class="section-collection-list__header">WORKING WITH</div>
+                    <div class="section-collection-list__title">LE GRAND SAC</div>
                 </div>
                 <div class="section-collection-list__btn">
                     <a href="#" class="btn btn--white">DISCORVER</a>
@@ -647,9 +650,9 @@
         </div>
 
         <div class="section-feature-collection">
-            <div class="section__text">
-                <div class="section__title">OUR BEST SELLERS</div>
-                <div class="section__desc">LE GRAND SAC</div>
+            <div class="section-feature-collection__text">
+                <div class="section-feature-collection__header">NEW COLORS</div>
+                <div class="section-feature-collection__title">LE GRAND SAC</div>
             </div>
 
             <div class="slide-content">
@@ -878,19 +881,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
-
         </div>
 
         <div class="section-collection-list section-collection-list__img">
-            <div class="section__img"></div>
-            <div class="section-box">
-                <div class="section__text">
-                    <div class="section-box__desc">CHILLING WITH</div>
-                    <div class="section-box__title">LA DOUBLE POCHETTE</div>
+            <div class="section-collection-list__anh"></div>
+            <div class="section-collection-list-box">
+                <div class="section-collection-list__text">
+                    <div class="section-collection-list__header">CHILLING WITH</div>
+                    <div class="section-collection-list__title">LA DOUBLE POCHETTE</div>
                 </div>
                 <div class="section-collection-list__btn">
                     <a href="#" class="btn btn--white">DISCORVER</a>
@@ -899,9 +899,9 @@
         </div>
 
         <div class="section-feature-collection">
-            <div class="section__text">
-                <div class="section__title">BACK IN STOCK</div>
-                <div class="section__desc">LA DOUBLE POCHETTE</div>
+            <div class="section-feature-collection__text">
+                <div class="section-feature-collection__header">BACK IN STOCK</div>
+                <div class="section-feature-collection__title">LA DOUBLE POCHETTE</div>
             </div>
 
             <div class="slide-content">
@@ -1130,13 +1130,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
 
             <div class="section-feature-collection__btn">
-                <a href class="btn btn--black">SHOP ALL BEST SELLERS</a>
+                <a href class="btn btn--black">SHOP ALL COLORS</a>
             </div>
 
         </div>
@@ -1183,14 +1181,61 @@
 
         </div>
 
-        <div class="shopify-section-shop-the-look">
+        <div class="section-shop-the-look">
             <div class="section-feature-collection">
-                <div class="section__text">
-                    <div class="section__title">SHOP</div>
-                    <div class="section__desc">OUR LOOKS</div>
+                <div class="section-feature-collection__text">
+                    <div class="section-feature-collection__header">SHOP</div>
+                    <div class="section-feature-collection__title">OUR LOOKS</div>
                 </div>
 
                 <div class="slide-content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <!-- <div class="section-timeline"> -->
+                                <div class="section-timeline-container">
+                                    <div class="section-content">
+                                        <div class="section-content__box section-content__image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/files/Shop-the-look-2_600x.progressive.jpg?v=1522690388"
+                                                alt="">
+                                        </div>
+
+                                        <div class="section-content__box">
+                                            <div class="section-content__info">
+                                                <div class="section-content__img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/products/Petit-Violette-Bois-de-Rose-01_1000x.jpg?v=1570300519%201000w" alt="">
+                                                    <img src="//cdn.shopify.com/s/files/1/0011/6680/3007/products/Petit-Violette-Bois-de-Rose-03_1000x.jpg?v=1570300519 1000w" alt="">
+                                                </div>
+                                                <div class="section-content__top">LE PETIT VIOLETTE ROSEWOOD</div>
+                                                <div class="section-content__price">$290</div>
+                                                <div class="section-feature-collection__btn">
+                                                    <a href class="btn btn--black">VIEWS THIS PRODUCT</a>
+                                                </div>
+                                                <div class="section-content__dot">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                            </div>
+                        </div>
+                        <div class="swiper-button-move swiper-button-next"></div>
+                        <div class="swiper-button-move swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="slide-content">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
 
@@ -1222,16 +1267,87 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="swiper-slide"></div>
-    
-                            <div class="swiper-slide"></div> -->
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-move swiper-button-next"></div>
+                        <div class="swiper-button-move swiper-button-prev"></div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
+        </div>
+
+        <div class="section-blog-posts">
+            <div class="section-feature-collection">
+                <div class="section-feature-collection__text">
+                    <div class="section-feature-collection__header">NEWS</div>
+                    <div class="section-feature-collection__title">FROM THE BLOG</div>
+                </div>
+
+                <div class="section-blog-posts-container">
+                    <div class="section-blog-posts-content">
+                        <div class="section-blog-posts-box">
+                            <div class="section-blog-posts__img">
+                                <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/articles/11_400x.jpg?v=1522410170"
+                                    alt="">
+                            </div>
+                            <div class="section-blog-posts__text">
+                                <div class="section-blog-posts__header">INTERVIEW</div>
+                                <div class="section-blog-posts__title">LEO ET VIOLETTE FOUNDERS INTERVIEW
+                                </div>
+                                <div class="section-blog-posts__desc">Leo et Violette's story is ours. We
+                                    are
+                                    Léo Dominguez & Violette Polchi. Two Parisian lovers sharing our life
+                                    for
+                                    more than 8 years. </div>
+                            </div>
+                            <div class="section-blog-posts__btn">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        <div class="section-blog-posts-box">
+                            <div class="section-blog-posts__img">
+                                <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/articles/7_400x.jpg?v=1522409295"
+                                    alt="">
+                            </div>
+                            <div class="section-blog-posts__text">
+                                <div class="section-blog-posts__header">LAUNCH</div>
+                                <div class="section-blog-posts__title">NEW LE GRAND SAC</div>
+                                <div class="section-blog-posts__desc">Le Grand sac, elegant by its design
+                                    and
+                                    practical by its size, is the perfect everyday bag.</div>
+                            </div>
+                            <div class="section-blog-posts__btn">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        <div class="section-blog-posts-box">
+                            <div class="section-blog-posts__img">
+                                <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/articles/article-1_400x.jpg?v=1522281314"
+                                    alt="">
+                            </div>
+                            <div class="section-blog-posts__text">
+                                <div class="section-blog-posts__header">PRODUCT</div>
+                                <div class="section-blog-posts__title">TAKE CARE OF LEATHER</div>
+                                <div class="section-blog-posts__desc">Leather is a living and natural
+                                    material.
+                                    A well-treated leather can become even more beautiful and unique over
+                                    time.
+                                </div>
+                            </div>
+                            <div class="section-blog-posts__btn">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-feature-collection__btn">
+                    <a href class="btn btn--black">SHOP ALL BEST SELLERS</a>
+                </div>
+
+            </div>
         </div>
     </div>
 

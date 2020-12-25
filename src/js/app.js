@@ -2,8 +2,6 @@ import '../styles/app.scss';
 
 console.log('Starting kmacoders dev !!!');
 
-console.log(window);
-
 //header-top
 let mainNav = document.querySelector('.main-nav');
 document.addEventListener('scroll', function(e) {
@@ -24,19 +22,40 @@ liTag[0].addEventListener('click', () => {
 })
 
 // slide
-var swiper = new Swiper('.swiper-container', {
+var slideHeader = new Swiper('.slide-header .swiper-container', {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-        delay: 2500,
+        delay: 8000,
         disableOnInteraction: false,
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.slide-header .swiper-pagination',
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.slide-header .swiper-button-next',
+        prevEl: '.slide-header .swiper-button-prev',
     },
 });
+
+var slideContent = new Swiper('.slide-content .swiper-container', {
+    navigation: {
+      nextEl: '.slide-content .swiper-button-next',
+      prevEl: '.slide-content .swiper-button-prev',
+    },
+});
+
+// let dotContent = document.querySelectorAll('.section-content__dot span');
+// dotContent[0].classList.add('class', 'section-content__dot-active');
+// Array.from(dotContent).forEach((item, index) => {
+//     item.addEventListener('click', () => {
+//         if(index !== 0) {
+//             item.classList.add('class', 'section-content__dot-active');
+//             dotContent[0].classList.remove('class', 'section-content__dot-active');
+//         }
+//         else {
+//             item.classList.add('class', 'section-content__dot-active');
+//         }
+//     })
+// })
