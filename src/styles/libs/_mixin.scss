@@ -1,0 +1,7 @@
+@mixin slideImg {
+    animation-name: moveScale;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    background-size: cover;
+}

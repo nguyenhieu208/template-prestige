@@ -1,29 +1,19 @@
-.btn {
-    display: inline-block;
-    width: 124px;
-    height: 46px;
-    text-align: center;
-    line-height: 46px;
-}
-
-.btn--white {
-    background-color: $color-primary;
-    color: black;
-    font-size: 1.4rem;
-    text-decoration: none;
-    margin-right: 16px;
-}
-
 $color: rgba(0, 0, 0, 0.2);
 .btn {
     display: inline-block;
-    letter-spacing: .15rem;
-    transition: all .3s;
+    padding: 14px 28px;
+    text-align: center;
+    font-size: 1.4rem;
+
     position: relative;
+
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    transition: all .3s;
+    
     overflow: hidden;
     z-index: 1;
-    border: 1px solid $color-primary;
-    background-color: #fff;
+    
     &:before {
         content: '';
         position: absolute;
@@ -50,5 +40,28 @@ $color: rgba(0, 0, 0, 0.2);
         &:before {
             width: 100%;
         }
+    }
+}
+
+.btn--white {
+    color: black;
+    text-decoration: none;
+    margin-right: 16px;
+    border: 1px solid $color-primary;
+    background-color: #fff;
+}
+
+$abc: rgb(239,239,239);
+.btn--black {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+    &:before {
+        background-color: darken($abc, 15%);
+    }
+
+    &:hover {
+        color: black;
+        border: 1px solid black;
     }
 }

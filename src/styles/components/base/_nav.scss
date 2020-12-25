@@ -1,3 +1,12 @@
+.top-bar {
+    height: 40px;
+    background-color: black;
+    color: $color-primary;
+    font-size: 1.4rem;
+    line-height: 40px;
+    text-align: center;
+}
+
 /* menu */
 .main-nav {
     // position: sticky;
@@ -30,7 +39,39 @@
         & .nav__icon--header {
             color: black;
         }
+
+        & .nav-right__list svg {
+            color: black;
+        }
     }  
+}
+
+.main-nav.main-nav__sticky {
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+    & .nav__link {
+        color: black;
+    }
+
+    & .brand__img--black {
+        display: block;
+
+        animation: fadeIn ease-in 0.2s;
+    }
+
+    & .brand__img--white {
+        display: none;
+    }
+
+    & .nav__icon--header {
+        color: black;
+    }
+
+    & .nav-right__list svg {
+        color: black;
+    }
 }
 
 .nav {
@@ -365,6 +406,7 @@ svg {
     color: rgb(255, 255, 255);
     margin: 30px 0 0 30px;
     width: 16px;
+    cursor: pointer;
 }
 
 .nav__tablet--list {
@@ -380,11 +422,6 @@ svg {
     &:not(:last-child):after {
         display: block;
         content: '';
-        // width: 100%;
-        // height: 1px;
-        // background-color: #fff;
-        // position: absolute;
-        // top: 76%;
         position: relative;
         top: 20px;
         border-bottom: 1px solid #fff;
@@ -443,8 +480,6 @@ svg {
 
 // nav top of tablet sub--menu
 .nav__tablet--item:first-child {
-    // display: flex;
-    // flex-direction: column;
     position: relative;
 }
 
@@ -477,12 +512,6 @@ svg {
         font-size: 12px;
         color: white;
     }
-}
-
-
-.nav__tablet--item-click.nav__tablet--item .xxx{
-    
-    // opacity: 1;
 }
 
 .nav__tablet--item-click.nav__tablet--item .nav__tablet--sub{
@@ -531,10 +560,7 @@ svg {
     position: absolute;
 }
 
-.content {
-    height: 300px;
-    background-color: red;
-}
+
 
 @media screen and (max-width: 1500px) {
     .col-12 {

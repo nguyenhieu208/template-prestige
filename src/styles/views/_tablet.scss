@@ -2,20 +2,19 @@
     .nav {
         margin: 0 30px;
     }
+
     .nav-left__list,
     .nav-right__list {
         display: none;
     }
+
     .nav__icon {
         display: block;
         height: 100%;
     }
-    .slide__dot {
-        right: unset;
-        left: 60px;
-        bottom: 100px;
-    }
+
     .slide--box {
         left: 30px;
     }
+
 }
