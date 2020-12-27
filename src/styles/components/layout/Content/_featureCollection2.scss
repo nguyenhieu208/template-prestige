@@ -1,0 +1,16 @@
+.section-product {
+    width: 100%;
+}
+
+.section-product__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-product__list .product__item {
+    width: 25%;
+}
+
+.section-product__list img {
+    width: 90%;
+}

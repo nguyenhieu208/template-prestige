@@ -1,3 +1,18 @@
+@media screen and (max-width: 1200px) {
+    //bloh posts
+    .section-blog-posts .section-feature-collection {
+        padding: 50px;
+    }
+
+    .section-blog-posts-content {
+        max-width: 1100px;
+    }
+
+    .section-blog-posts-box {
+        margin: 0 16px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .nav {
         margin: 0 30px;
@@ -16,5 +31,37 @@
     .slide--box {
         left: 30px;
     }
+    
+    .section-timeline-container {
+        margin: 50px ;
+    }
 
+    .section-years {
+        margin-top: 50px ;
+    }
+
+    
 }
+
+@media screen and (max-width: 900px) {
+    .section-product__list .product__item {
+        width: 50%;
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
+    //blog
+    .section-blog-posts-content {
+        flex-wrap: wrap;
+    }
+
+    .section-blog-posts-content {
+        max-width: 820px;
+    }
+
+    .section-blog-posts-box {
+        width: 46%;
+        margin: 0 10px 80px 10px;
+    }
+ }
