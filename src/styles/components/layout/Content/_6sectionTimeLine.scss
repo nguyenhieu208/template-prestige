@@ -45,14 +45,13 @@
 }
 
 .section-content__top {
-    font-size: 1.2rem;
-    letter-spacing: 2.4px;
+    @include sectiondesc;
 }
 
 .section-content__title {
-    font-size: 2rem;
-    letter-spacing: 4px;
     margin: 20px 0 30px 0;
+    
+    @include sectionTitle;
 }
 
 .section-content__desc {
@@ -78,11 +77,9 @@
 
     & a {
         display: inline-block;
-
-        color: black;
-        font-size: 1.2rem;
         text-decoration: none;
-        letter-spacing: 2.4px;        
+        
+        @include sectiondesc;      
     }
 }
 

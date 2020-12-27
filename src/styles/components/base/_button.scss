@@ -1,12 +1,13 @@
 .btn {
     position: relative;
     padding: 14px 28px;
-    font-size: 11px;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: 300;
     background-color: transparent;
     z-index: 1;
     text-decoration: none;
+    letter-spacing: 2.4px;
     
     &::before {
       position: absolute;

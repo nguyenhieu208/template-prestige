@@ -8,7 +8,6 @@
 }
 
 .section-blog-posts-content {
-    padding-top: 80px;
     max-width: 1400px;
     margin: 0 auto;
 
@@ -47,14 +46,13 @@
 }
 
 .section-blog-posts__header {
-    font-size: 1.2rem;
-    letter-spacing: 2.4px;
+    @include sectiondesc;
 }
 
 .section-blog-posts__title {
-    font-size: 2rem;
-    letter-spacing: 4px;
     margin: 20px 0;
+    
+    @include sectionTitle;
 }
 
 .section-blog-posts__desc {
