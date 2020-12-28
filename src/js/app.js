@@ -34,19 +34,20 @@ liTag[0].addEventListener('click', () => {
 })
 
 
+// check shop 
+// let listDotShop = document.querySelectorAll('.shop-box-right__dot');
 
-// console.log(slideContent);
+// let check = document.querySelectorAll('.check');
 
-// let dotContent = document.querySelectorAll('.section-content__dot span');
-// dotContent[0].classList.add('class', 'section-content__dot-active');
-// Array.from(dotContent).forEach((item, index) => {
+
+// Array.from(check).forEach((item, index) => {
+//     (listDotShop[0].children)[0].classList.add('class', 'dot__active');
 //     item.addEventListener('click', () => {
-//         if(index !== 0) {
-//             item.classList.add('class', 'section-content__dot-active');
-//             dotContent[0].classList.remove('class', 'section-content__dot-active');
+//         if(item.checked === true && index == 0){
+//             (listDotShop[0].children)[index].classList.add('class', 'dot__active');
 //         }
 //         else {
-//             item.classList.add('class', 'section-content__dot-active');
+//             (listDotShop[0].children)[index].classList.remove('class', 'dot__active')
 //         }
-//     })
+//     })    
 // })

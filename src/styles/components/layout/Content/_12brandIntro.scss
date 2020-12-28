@@ -1,0 +1,43 @@
+.section-brand-intro {
+    height: 600px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://cdn.shopify.com/s/files/1/0011/6680/3007/files/leoetviolette_64395b45-b763-45e7-b669-3fa6b66777a3_1500x.jpg?v=1522603058');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-brand-intro-box {
+
+}
+
+.section-brand-intro__text {
+    text-align: center;
+    width: 425px;
+    height: 134px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.section-brand-intro__header {
+    @include sectiondesc;
+    color: white;
+}
+
+.section-brand-intro__title {
+    @include sectionTitle;
+
+    color: white;
+
+    margin-top: -10px;
+}
+
+.section-brand-intro__desc {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.8;
+}

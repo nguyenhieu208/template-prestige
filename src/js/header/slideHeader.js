@@ -28,7 +28,7 @@ var slideHeader = new Swiper('.slide-header .swiper-container', {
           }),
           anime({
             targets: '.swiper-slide .slide__img',
-            scale: ['1.5', '1'],
+            scale: ['1.5', '1.2'],
             duration: 2000,
             easing: 'easeInOutQuad',
           });
