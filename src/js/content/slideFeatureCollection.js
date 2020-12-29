@@ -14,7 +14,7 @@ var slideFeatureCollection = new Swiper('.section-feature-collection .slide-cont
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 15,
       }
     }

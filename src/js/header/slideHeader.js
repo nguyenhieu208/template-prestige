@@ -5,7 +5,7 @@ var slideHeader = new Swiper('.slide-header .swiper-container', {
     loop: true,
     speed:300,
     autoplay: {
-        delay: 8000,
+        delay: 80000,
         disableOnInteraction: false,
     },
     pagination: {
@@ -21,7 +21,7 @@ var slideHeader = new Swiper('.slide-header .swiper-container', {
           anime({
             targets: '.swiper-slide .slide--box',
             easing: 'easeInOutQuad',
-            translateY: ['0%', '-60%'],
+            translateY: ['0%', '-70%'],
             opacity: ['0', '1'],
             duration: 1000,
             delay: 1500,

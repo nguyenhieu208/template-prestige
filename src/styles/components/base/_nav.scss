@@ -578,6 +578,26 @@ svg {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .nav__tablet {
+        width: 534px;
+    }
+    .slide--box {
+        width: 94%;
+    }
+
+    .slide__btn {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        & a {
+            display: inline-block;
+            width: 46%;
+            margin-right: -20px;
+        }
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

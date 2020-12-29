@@ -18,19 +18,3 @@
 
     @include sectionTitle;
 }
-
-.section__gender{
-    text-align: center;
-    
-    @include sectionTitle;
-}
-
-.section__gender a {
-    color: #1c1b1b;
-    text-decoration: none;
-    margin: 0 15px;
-
-    &:first-child {
-        border-bottom: 2px solid black;
-    }
-}

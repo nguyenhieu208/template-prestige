@@ -3,11 +3,25 @@ var slideShopTheLook = new Swiper('.section-shop-the-look .swiper-container', {
       nextEl: '.section-shop-the-look .swiper-button-next',
       prevEl: '.section-shop-the-look .swiper-button-prev',
     },
-    slidesPerView: 1,
-    prevNextButtons: true,
-            pageDots: true,
-            draggable: false,
-            wrapAround: true,
+    direction: 'horizontal',
+    loop: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1.5,
+        spaceBetween: 0
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1.5,
+        spaceBetween: 0
+      },
+      // when window width is >= 640px
+      960: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      }
+    }
 });
 
 export default slideShopTheLook;
