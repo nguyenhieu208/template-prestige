@@ -30,11 +30,117 @@
 .shop-box-left {
     max-width: 550px;
     max-height: 550px;
+    position: relative;
     & img {
         width: 100%;
         height: 100%;
     }
 }
+
+// dot
+.shop-box-left__dot {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    animation-name: zoomDot;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+
+    &:hover {
+        transform: scale(1.5);
+        animation: scaleDot 0.2s linear;
+    }
+
+    &::before {
+        display: block;
+        content: '';
+
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: white;
+
+        transition: all 0.3s linear;
+    }
+}
+
+.shop-box-left__dot-left {
+    position: absolute;
+    left: 17%;
+    top: 42%;
+
+    &:hover {
+        // transform: scale(1.5);
+    }
+    
+    &::before {
+        position: absolute;
+        top: 26%;
+        left: 28%;
+    }
+}
+
+.shop-box-left__dot-right {
+    position: absolute;
+    left: 84%;
+    top: 32%;
+
+    &:hover {
+        // transform: scale(1.5);
+    }
+
+    &::before {
+        position: absolute;
+        top: 26%;
+        left: 28%;
+    }
+}
+
+.shop-box-left__dot--active {
+    width: calc(34px *1.5);
+    height: calc(34px *1.5);
+
+    &::before {
+        display: block;
+        content: '';
+
+        width: calc(15px * 1.5);
+        height: calc(15px * 1.5);
+        border-radius: 100%;
+        background-color: white;
+    }
+}
+
+.shop-box-left__dot.shop-box-left__dot--active {
+    &:hover {
+        transform: scale(1);
+        animation: unset;
+    }
+}
+
+@keyframes zoomDot {
+    0%, 100%   {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes scaleDot {
+    0%  {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+
+
 
 .shop-box-right {
     padding: 0 80px;
@@ -75,6 +181,10 @@
     }
 }
 
+.shop-box-right__img-hidden {
+    display: none;
+}
+
 .shop-box-right .btn {
     display: block;
 }
@@ -86,9 +196,8 @@
     border-radius: 100%;
     border: 1px solid #333;
     margin: 0 4px;
-    // background-color: #000;
 }
 
 .shop-box-right__dot label.dot__active {
-    // background-color: black;
+    background-color: black;
 }

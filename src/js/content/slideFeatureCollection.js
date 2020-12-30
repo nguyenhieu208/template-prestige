@@ -9,13 +9,17 @@ var slideFeatureCollection = new Swiper('.section-feature-collection .slide-cont
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      768: {
-        slidesPerView: 3,
+      800: {
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       1024: {
         slidesPerView: 3,
         spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
       }
     }
 });

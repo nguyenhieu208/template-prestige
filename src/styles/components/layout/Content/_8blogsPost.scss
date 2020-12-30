@@ -12,7 +12,6 @@
 .section-blog-posts-content {
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .section-blog-posts-box {
@@ -43,7 +42,6 @@
 
 .section-blog-posts__text {
     margin: 40px 20px 20px 20px;
-    // height: 190px;
 
     display: flex;
     flex-direction: column;
