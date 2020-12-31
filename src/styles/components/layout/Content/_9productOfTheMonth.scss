@@ -1,3 +1,148 @@
 .section-product-of-month {
     border-top: 1px solid #333;
+
+    // max-height: 750px;
+}
+.section-product-of-month-container {
+    max-width: 880px;
+    max-height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.section-month-box-left {
+    display: flex;
+    justify-content: flex-end;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section-month-box-left__img {
+    width: 100%;
+    height: 100%;
+
+    & img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.section-month-box-right {
+    width: 400px;
+    height: 100%;
+    margin-left: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-month-box-right__text {
+
+}
+
+.section-month-box-right__title {
+    @include sectionTitle;
+}
+
+.section-month-box-right__price {
+    font-size: 2rem;
+    letter-spacing: 2px;
+
+    margin: 16px 0 22px 0;
+}
+
+.section-month-box-right__name {
+
+}
+
+.section-month-box-right__name--color {
+    font-size: 1.6rem;
+}
+
+.section-month-box-right__name--btn {
+    display: flex;
+    margin: 8px 0 24px 0;
+}
+
+.btn-box {
+    width: 44px;
+    height: 44px;
+    margin-right: 15px;
+}
+
+.btn-box-blue {
+    border: 1px solid #20263b;
+}
+
+.btn-box-black {
+    border: 1px solid #2c2c2f;
+    
+}
+
+.btn-box1 {
+    width: 36px;
+    height: 36px;
+    background-color: #20263b;
+    transform: translate(3px, 3px);
+}
+
+.btn-box2 {
+    width: 36px;
+    height: 36px;
+    background-color: #2c2c2f;
+    transform: translate(3px, 3px);
+}
+
+.btn-box--active {
+    // border: 1px solid red;
+}
+
+
+.section-month-box-right__size {
+    & div {
+        font-size: 1.6rem;
+    }
+}
+
+.section-month-box-right__size {
+    // width: 400px;
+}
+
+.section-month-box-right__size button{
+    width: 100%;   
+    height: 44px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 8px 0 24px 0;
+
+    & span {
+        padding-left: 12px;
+    }
+
+    & svg {
+        margin-right: 12px;
+        color: black;
+    }
+}
+
+.section-month-box-right__noti {
+    font-size: 1.4rem;
+    color: rgb(126, 126, 126);
+}
+
+.section-month-box-right__btn {
+    // width: 400px;
+    margin: 30px 0 40px 0;
+
+    & a {
+        display: block;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
 }
