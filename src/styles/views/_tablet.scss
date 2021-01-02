@@ -74,9 +74,42 @@
 
     // 7 
     .section-shop-the-look.section__main {
-        padding: 80px 50px;
+        padding: 50px;
     }
-    // ???
+
+    .section-shop-the-look .swiper-container {    
+        max-width: 900px;
+    }
+
+    
+    .section-shop-the-look .swiper-button-next,
+    .section-shop-the-look .swiper-button-prev {
+        display: none;
+    }
+
+    .shop-inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .shop-box-right {
+        display: none;
+    }
+
+    .section-shop-the-look .swiper-slide{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .section-shop-the-look .swiper-slide {
+        width: 75%;
+    }
+
+    .section-shop-the-look__btn {
+        display: inherit;
+        margin-top: 40px;
+     }   
 
     // 8
     .section-blog-posts.section__main {
@@ -95,6 +128,11 @@
         }
     }
 
+    .section-blog-posts__text {
+        margin: 40px 20px 20px 0;
+    }
+    
+
     // 10 
     .section-leather {
         height: 500px;
@@ -105,15 +143,7 @@
         height: 500px;
     }
 
-    // .section-shop-the-look .swiper-wrapper {
-    //     display: flex;
-    //     width: 100%;
-    //     margin: 0 auto;
-    // }
-
-    // .section-shop-the-look .swiper-slide {
-    //     width: 75%;
-    // }
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -160,7 +190,16 @@
 
     // 6 ???
 
-    // 7 ???
+    // 7
+    .section-shop-the-look.section__main {
+        padding: 50px 30px;
+    }
+
+    .section-shop-the-look__btn {
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+     }   
 
     // 8
     .section-blog-posts.section__main {
@@ -252,5 +291,11 @@
 
     .section-leather-artisans-text {
         max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-blog-posts.section__main {
+        padding: 50px 30px;
     }
 }

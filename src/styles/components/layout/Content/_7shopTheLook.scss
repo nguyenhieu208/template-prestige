@@ -10,31 +10,48 @@
     text-align: center;
 }
 
-.section-shop-the-look .swiper-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+.section-shop-the-look .swiper-container {    
+    max-width: 1080px;
+
+
+    margin: 0 auto;
 }
 
 .section-shop-the-look .swiper-slide{
     padding: 0 0 0 80px;
+    width: 100%;
 }
 
 .shop-inner-box {
-    height: 100%;
+    max-width: 980px;
+    max-height: 100%;
+    margin: 0 auto;
+
     display: flex;
-    justify-content: center;
 }
 
 .shop-box-left {
-    max-width: 550px;
-    max-height: 550px;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.shop-box-left__img {
+    width: 100%;
+    height: 100%;
+
     position: relative;
+    
     & img {
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
     }
+}
+
+.shop-box-right {
+    width: 270px;
+    height: 100%;
+    margin: 0 80px;
 }
 
 // dot
@@ -71,10 +88,6 @@
     position: absolute;
     left: 17%;
     top: 42%;
-
-    &:hover {
-        // transform: scale(1.5);
-    }
     
     &::before {
         position: absolute;
@@ -88,10 +101,6 @@
     left: 84%;
     top: 32%;
 
-    &:hover {
-        // transform: scale(1.5);
-    }
-
     &::before {
         position: absolute;
         top: 26%;
@@ -100,6 +109,7 @@
 }
 
 .shop-box-left__dot--active {
+    margin: -8px 0 0 -8px;
     width: calc(34px *1.5);
     height: calc(34px *1.5);
 
@@ -142,25 +152,19 @@
 
 
 
-.shop-box-right {
-    padding: 0 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 .shop-box-right__text .shop-box-right__title {
     @include sectiondesc;
 
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .shop-box-right__price {
-    @include sectionTitle;
+    @include sectiondesc;
 }
 
 .shop-box-right__img {
+    margin-top: 34px;
     width: 250px;
 
     &:hover {
@@ -187,12 +191,13 @@
 
 .shop-box-right .btn {
     display: block;
+    margin: 40px 0 20px 0;
 }
 
 .shop-box-right__dot label {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     border: 1px solid #333;
     margin: 0 4px;
@@ -201,3 +206,8 @@
 .shop-box-right__dot label.dot__active {
     background-color: black;
 }
+
+.section-shop-the-look__btn {
+    display: none;
+    margin: 0 auto;
+ }   
