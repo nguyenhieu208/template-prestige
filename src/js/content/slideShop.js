@@ -1,7 +1,7 @@
-var slideShopTheLook = new Swiper('.section-shop-the-look .swiper-container', {
+var slideShopTheLook = new Swiper('.section-shop .swiper-container', {
     navigation: {
-      nextEl: '.section-shop-the-look .swiper-button-next',
-      prevEl: '.section-shop-the-look .swiper-button-prev',
+      nextEl: '.section-shop .swiper-button-next',
+      prevEl: '.section-shop .swiper-button-prev',
     },
     direction: 'horizontal',
     loop: true,

@@ -1,21 +1,20 @@
 // section-collection-list
 .section-collection-list {
     height: 600px;
-    overflow: hidden;
-    position: relative;
-}
 
-.section-feature-collection__title {
-    font-size: 2rem;
-    letter-spacing: 4px;
+    position: relative;
+
+    overflow: hidden;
 }
 
 .section-collection-list__anh {
     width: 100%;
     height: 100%;
+
     background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://cdn.shopify.com/s/files/1/0011/6680/3007/collections/grand-sac-collection_f9995533-f4ef-4437-bed5-def3c64a91fc_1500x.jpg?v=1522427539');
     background-position: center;
     background-size: cover;
+
     transition: all 20s linear;
     
     &:hover {
@@ -25,20 +24,20 @@
 
 .section-collection-list-box {
     position: absolute;
+
     bottom: 56px;
     margin-left: 50px;
 }
 
 .section-collection-list__header {
-    font-size: 1.2rem;
-    letter-spacing: 2.4px;
+    @include sectiondesc;
     color: white;
 }
 
 .section-collection-list__title {
-    font-size: 2rem;
+    @include sectionTitle;
     color: white;
-    letter-spacing: 4px;
+    
     margin-top: 20px;
 }
 

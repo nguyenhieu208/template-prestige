@@ -36,7 +36,6 @@
     }
 }
 
-
 // slide
 .product__img {
     & a {
@@ -75,16 +74,6 @@
 
 .product__price {
     @include sectiondesc;
-}
-
-.swiper-button-move {
-    background-color: white;
-    color: black;
-    width: 44px;
-    height: 44px;
-    border-radius: 100%;
-    box-shadow: rgba(54, 54, 54, 0.2) 0px 2px 10px 0px;
-    --swiper-navigation-size: 20px;
 }
 
 .section__btn {

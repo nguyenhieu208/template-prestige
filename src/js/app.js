@@ -17,6 +17,7 @@ const slideShop = slideShopTheLook;
 // checkshop
 let checkShop = checkShopTheLook;
 
+//check product
 let checkProduct = checkProductOfMonth;
 
 

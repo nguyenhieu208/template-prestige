@@ -2,7 +2,7 @@ let listInputBtn = document.querySelectorAll('input[name="shop"]');
 let listDotBtn = document.querySelectorAll('.shop-box-right__dot')[0].children;
 
 // focus parent
-let listImg = document.querySelectorAll('.section-shop-the-look .swiper-slide')[1];
+let listImg = document.querySelectorAll('.section-shop .swiper-slide')[1];
 
 let imgItems = listImg.querySelectorAll('.shop-box-right__img');
 let listDotInImg = listImg.querySelectorAll('.shop-box-left__dot');
