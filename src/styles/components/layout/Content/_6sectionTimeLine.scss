@@ -57,7 +57,9 @@
 
 .section-timeline-content__desc {
     font-size: 1.4rem;
-    line-height: 1.4;
+    line-height: 23.1px;
+    color: $text-color;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .section-years {
@@ -81,7 +83,7 @@
         display: inline-block;
         text-decoration: none;
         
-        @include sectiondesc;      
+        @include sectionHeader;    
     }
 }
 

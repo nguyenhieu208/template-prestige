@@ -8,6 +8,10 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <title>template</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -330,13 +334,33 @@
                                     </g>
                                 </svg>
                             </div>
-                            <div class="nav__icon icon__cart">
+
+                            <label for="cart--checked" class="nav__icon icon__cart">
                                 <svg class="nav__icon--header" class="Icon Icon--cart-desktop" role="presentation"
                                     viewBox="0 0 19 23">
                                     <path
                                         d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z"
                                         fill="currentColor"></path>
                                 </svg>
+                            </label>
+
+                            <input hidden type="checkbox" name="" id="cart--checked">
+
+                            <label class="nav__overlay" for="cart--checked"></label>
+
+                            <div class="cart__tablet">
+                                <div class="cart-top">
+                                    <div class="cart__header">CART</div>
+                                    <label for="cart--checked" class="cart__close">
+                                        <svg class="Icon Icon--close nav__close__icon" role="presentation"
+                                            viewBox="0 0 16 14">
+                                            <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="cart__notify">Spend $70 more and get free shipping! </div>
+                                <div class="cart__products">YOUR CART IS EMPTY</div>
                             </div>
                         </div>
                     </nav>

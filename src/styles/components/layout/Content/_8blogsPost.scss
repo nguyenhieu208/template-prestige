@@ -51,17 +51,20 @@
 }
 
 .section-blog__header {
-    @include sectiondesc;
+    @include sectionHeader;
 }
 
 .section-blog__title {
-    margin: 20px 0;
-    
     @include sectionTitle;
+    
+    margin: 20px 0;
+    line-height: 29.7px;
 }
 
 .section-blog__desc {
     font-size: 1.3rem;
-
+    line-height: 23.1px;
     margin-bottom: 20px;
+
+    font-family: 'Nunito Sans', sans-serif;
 }

@@ -2,11 +2,12 @@ let listInputBtn = document.querySelectorAll('input[name="shop"]');
 let listDotBtn = document.querySelectorAll('.shop-box-right__dot')[0].children;
 
 // focus parent
-let listImg = document.querySelectorAll('.section-shop .swiper-slide')[1];
+let slide = document.querySelectorAll('.section-shop .swiper-slide.swiper-slide-active')[0];
 
-let imgItems = listImg.querySelectorAll('.shop-box-right__img');
-let listDotInImg = listImg.querySelectorAll('.shop-box-left__dot');
+let imgItems = slide.querySelectorAll('.shop-box-right__img');
+let listDotInImg = slide.querySelectorAll('.shop-box-left__dot');
 
+console.log(listDotInImg)
 
 function render() {
     for (let i = 0; i < Array.from(listInputBtn).length; i++) {

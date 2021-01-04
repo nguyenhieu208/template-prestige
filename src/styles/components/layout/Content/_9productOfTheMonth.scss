@@ -1,4 +1,4 @@
-.section-product {
+.section-product.section__main {
     border-top: 1px solid #333;
 }
 .section-product-container {
@@ -42,12 +42,17 @@
 }
 
 .section-product__title {
-    @include sectionTitle;
+    font-size: 1.8rem;
+    letter-spacing: 3.6px;
+    line-height: 29.7px;
+    color: $text-color;
 }
 
 .section-product__price {
-    font-size: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 2.8px;
+    line-height: 26.4px;
+    color: $text-color-light;
+    font-size: 1.8rem;
 
     margin: 16px 0 22px 0;
 }
@@ -96,7 +101,9 @@
 
 .section-product__size {
     & div {
-        font-size: 1.6rem;
+        color: $text-color;
+        font-size: 14px;
+        line-height: 23.1px;
     }
 }
 
@@ -122,7 +129,8 @@
 
 .section-product__noti {
     font-size: 1.4rem;
-    color: rgb(126, 126, 126);
+    color: $text-color-light;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .section-product__btn {

@@ -1,9 +1,9 @@
 import '../styles/app.scss';
 import {slideHeader} from './header/slideHeader';
 import {slideFeatureCollection} from './content/slideFeatureCollection';
+import {checkProductOfMonth} from './content/checkProductOfMonth';
 import {slideShopTheLook} from './content/slideShop';
 import {checkShopTheLook} from './content/checkShopTheLook';
-import {checkProductOfMonth} from './content/checkProductOfMonth';
 
 // Slide Header
 var slideHead = slideHeader;
@@ -14,11 +14,11 @@ const slideFeature = slideFeatureCollection;
 // Slide shopthelook
 const slideShop = slideShopTheLook;
 
-// checkshop
-let checkShop = checkShopTheLook;
-
 //check product
 let checkProduct = checkProductOfMonth;
+
+// checkshop
+let checkShop = checkShopTheLook;
 
 
 //header-top

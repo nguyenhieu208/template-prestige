@@ -35,7 +35,10 @@
 }
 
 .footer__desc {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    color: $text-color-light;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 23.1px;
 }
 
 .footer ul {
@@ -49,7 +52,9 @@
 
 .footer a {
     font-size: 1.4rem;
-    color: black;
+    color: $text-color-light;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 23.1px;
     text-decoration: none;
 }
 
@@ -123,12 +128,17 @@
 }
 
 .footer-bottom__header {
-
-    @include sectiondesc;   
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    line-height: 18.15px;
+    color: $text-color;
 }
 
 .footer-bottom__desc {
     font-size: 1.4rem;
+    color: $text-color-light;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 23.1px;
     margin-top: 8px;
 }
 
@@ -153,7 +163,11 @@
 }
 
 .footer-money__link {
-
+    & label {
+        color: $text-color-light;
+        font-size: 1rem;
+        line-height: 23.1px;
+    }
 }
 
 #footer-money--checked:checked ~ .footer-money-menu {

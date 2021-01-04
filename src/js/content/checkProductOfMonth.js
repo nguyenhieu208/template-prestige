@@ -1,7 +1,7 @@
 // check product of month
 let listBtn = document.querySelectorAll('.section-product .btn-box')
 let listInputBtn = document.querySelectorAll('.section-product input');
-let imgItems = document.querySelectorAll('.section-product img');
+let imgItems = document.querySelectorAll('.section-product-left__img img');
 
 let textStock = document.querySelectorAll('.section-product .section-product__noti')[0];
 
@@ -11,6 +11,7 @@ function render() {
         if(listInputBtn[i].checked == true) {
             listBtn[i].classList.add('class', 'btn-box--active');
             imgItems[i].style.display = "block";
+            
 
             if(i == 1) {
                 textStock.style.display = "none";

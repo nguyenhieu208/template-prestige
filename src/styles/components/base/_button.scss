@@ -35,7 +35,7 @@
 
 .btn--white {
     border: 1px solid white;
-    color: black;
+    color: #363636;
     &::before {
         background: white;
     }
@@ -46,19 +46,19 @@
 }
 
 .btn--black {
-    border: 1px solid black;
+    border: 1px solid $button-background;
     color: white;
     &::before {
-        background: black;
+        background: $button-background;
     }
     &:hover{
         color: #000;
-        border: 1px solid black;
+        border: 1px solid $button-background;
     }
 }
 
 .section__btn-secondary a {
-    color: black;
+    color: $text-color;
     text-decoration: none;
     font-size: 1.4rem;
 
