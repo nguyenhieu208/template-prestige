@@ -26,4 +26,4 @@ var slideShopTheLook = new Swiper('.section-shop-the-look .swiper-container', {
     }
 });
 
-export default slideShopTheLook;
+export {slideShopTheLook};

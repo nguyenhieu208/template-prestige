@@ -26,6 +26,10 @@
     & img {
         max-width: 100%;
         max-height: 100%;
+
+        &:last-child {
+            display: none;
+        }
     }
 }
 
@@ -39,10 +43,6 @@
     justify-content: space-between;
 }
 
-.section-month-box-right__text {
-
-}
-
 .section-month-box-right__title {
     @include sectionTitle;
 }
@@ -52,10 +52,6 @@
     letter-spacing: 2px;
 
     margin: 16px 0 22px 0;
-}
-
-.section-month-box-right__name {
-
 }
 
 .section-month-box-right__name--color {
@@ -73,13 +69,13 @@
     margin-right: 15px;
 }
 
-.btn-box-blue {
+//border
+.btn-box--active.btn-box-blue {
     border: 1px solid #20263b;
 }
 
-.btn-box-black {
+.btn-box--active.btn-box-black {
     border: 1px solid #2c2c2f;
-    
 }
 
 .btn-box1 {
@@ -96,19 +92,10 @@
     transform: translate(3px, 3px);
 }
 
-.btn-box--active {
-    // border: 1px solid red;
-}
-
-
 .section-month-box-right__size {
     & div {
         font-size: 1.6rem;
     }
-}
-
-.section-month-box-right__size {
-    // width: 400px;
 }
 
 .section-month-box-right__size button{
@@ -136,7 +123,6 @@
 }
 
 .section-month-box-right__btn {
-    // width: 400px;
     margin: 30px 0 40px 0;
 
     & a {

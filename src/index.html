@@ -990,8 +990,14 @@
                     <div class="section-month-box-left__img">
                         <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/products/La-Petite-Pochette-Bleu-01_400x.jpg?v=1527461034"
                             alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/products/La-Petite-Pochette-Noir-01_400x.jpg?v=1527461036"
+                            alt="">
                     </div>
                 </div>
+
+                <input hidden type="radio" id="p1" name="prOfMonth" value="male" checked>
+                <input hidden type="radio" id="p2" name="prOfMonth" value="female">
+
                 <div class="section-month-box-right">
                     <div class="section-month-box-right__text">
                         <div class="section-month-box-right__title">LA PETITE POCHETTE</div>
@@ -1000,12 +1006,12 @@
                     <div class="section-month-box-right__name">
                         <div class="section-month-box-right__name--color">Color: name</div>
                         <div class="section-month-box-right__name--btn">
-                            <div class="btn-box btn-box-blue btn-box--active">
+                            <label for="p1" class="btn-box btn-box-blue btn-box--active">
                                 <div class="btn-box1 "></div>
-                            </div>
-                            <div class="btn-box btn-box-black">
+                            </label>
+                            <label for="p2" class="btn-box btn-box-black">
                                 <div class="btn-box2"></div>
-                            </div>
+                            </label>
                         </div>
                     </div>
                     <div class="section-month-box-right__size">
@@ -1042,15 +1048,6 @@
             </div>
         </div>
 
-        <!-- 11 -->
-        <!-- <div class="section-intro">
-            <div class="section__main">
-                <div class="section-intro__title">
-                    The GQ choice: "black or green, with its leather both flexible and rigid, small Binder protects your equipment in dedicated compartments"
-                </div>
-            </div>
-        </div> -->
-
         <!-- 12 -->
         <div class="section-brand-intro">
             <div class="section-brand-intro-box">
@@ -1062,27 +1059,29 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- 13 -->
-    <div class="section-leather-artisans">
-        <div class="section-leather-artisans-left section-leather-artisans-box">
-            <div class="section-leather-artisans-text">
-                <div class="section-leather-artisans__header">THE FACTORY</div>
-                <div class="section-leather-artisans__title">LEATHER ARTISANS</div>
-                <div class="section-leather-artisans__desc">Our collections are made in a workshop located in Italy,
-                    near Naples. This factory- specialized in luxury leather goods- was created in the early 1980's by
-                    Dino Levorino, a well known artisan in Italy for his know-how.</div>
-                <div class="section__btn-secondary">
-                    <a href="#">Read more</a>
+        <!-- 13 -->
+        <div class="section-leather-artisans">
+            <div class="section-leather-artisans-left section-leather-artisans-box">
+                <div class="section-leather-artisans-text">
+                    <div class="section-leather-artisans__header">THE FACTORY</div>
+                    <div class="section-leather-artisans__title">LEATHER ARTISANS</div>
+                    <div class="section-leather-artisans__desc">Our collections are made in a workshop located in Italy,
+                        near Naples. This factory- specialized in luxury leather goods- was created in the early 1980's
+                        by
+                        Dino Levorino, a well known artisan in Italy for his know-how.</div>
+                    <div class="section__btn-secondary">
+                        <a href="#">Read more</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="section-leather-artisans-right section-leather-artisans-box">
-            <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/files/leather_464e1cc8-da0b-496f-9e5e-0701b53131d1_1200x.jpg?v=1523440185%201200w"
-                alt="">
+            <div class="section-leather-artisans-right section-leather-artisans-box">
+                <img src="https://cdn.shopify.com/s/files/1/0011/6680/3007/files/leather_464e1cc8-da0b-496f-9e5e-0701b53131d1_1200x.jpg?v=1523440185%201200w"
+                    alt="">
+            </div>
         </div>
     </div>
+
+
 
     <footer class="footer">
         <div class="main-footer">
@@ -1192,7 +1191,8 @@
                     <div class="footer-money__sub-header">
                         <label for="footer-money--checked" class="footer-money__sub-close">
                             <svg class="Icon Icon--close nav__close__icon" role="presentation" viewBox="0 0 16 14">
-                                <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                                <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd">
+                                </path>
                             </svg>
                         </label>
                         <div class="footer-money__sub-currency">CURRENCY</div>
@@ -1221,8 +1221,9 @@
                 </div>
                 <div class="footer-bottom--right">
                     <ul class="footer-bottom--right__list">
-                        <li class="footer-bottom--right__item"><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"
-                                role="img" width="38" height="24" aria-labelledby="pi-visa">
+                        <li class="footer-bottom--right__item"><svg viewBox="0 0 38 24"
+                                xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24"
+                                aria-labelledby="pi-visa">
                                 <title id="pi-visa">Visa</title>
                                 <path opacity=".07"
                                     d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
@@ -1234,8 +1235,9 @@
                                     d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z"
                                     fill="#142688"></path>
                             </svg></li>
-                        <li class="footer-bottom--right__item"><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"
-                                role="img" width="38" height="24" aria-labelledby="pi-master">
+                        <li class="footer-bottom--right__item"><svg viewBox="0 0 38 24"
+                                xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24"
+                                aria-labelledby="pi-master">
                                 <title id="pi-master">Mastercard</title>
                                 <path opacity=".07"
                                     d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
@@ -1265,8 +1267,9 @@
                                 </g>
                             </svg>
                         </li>
-                        <li class="footer-bottom--right__item"><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"
-                                width="38" height="24" role="img" aria-labelledby="pi-paypal">
+                        <li class="footer-bottom--right__item"><svg viewBox="0 0 38 24"
+                                xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img"
+                                aria-labelledby="pi-paypal">
                                 <title id="pi-paypal">PayPal</title>
                                 <path opacity=".07"
                                     d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
@@ -1284,8 +1287,9 @@
                                     d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z">
                                 </path>
                             </svg></li>
-                        <li class="footer-bottom--right__item"><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"
-                                role="img" width="38" height="24" aria-labelledby="pi-diners_club">
+                        <li class="footer-bottom--right__item"><svg viewBox="0 0 38 24"
+                                xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24"
+                                aria-labelledby="pi-diners_club">
                                 <title id="pi-diners_club">Diners Club</title>
                                 <path opacity=".07"
                                     d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
